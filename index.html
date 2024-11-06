@@ -1,0 +1,81 @@
+<html lang="en">
+<head><!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+    <title>College Day Diary</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+         <img src="logo.png.png" class="logo">
+         <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+
+         </ul>
+    </div>
+    <div class="container">
+        <div class="slider">
+            <div class="slides" style="--img: url('img1.jpg')">
+                <div class="content">
+                    <h2></h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img2.jpg')">
+              <div class="content">
+                <h2>Ms. Ambassadress</h2>
+                <P>The College of Computer Studies proudly congratulates Jasmine Rose Salaum, a BSIT student, for her outstanding achievement in being crowned the Ultimate Icon</P>
+              </div>
+            </div>
+            <div class="slides" style="--img: url('img3.jpg')">
+                <div class="content">
+                    <h2>Ms. Ambassadress</h2>
+                    <P>𝗖𝗼𝗹𝗹𝗲𝗴𝗲 𝗡𝗶𝗴𝗵𝘁  𝗠𝗿. 𝗔𝗺𝗯𝗮𝘀𝘀𝗮𝗱𝗼𝗿 & 𝗠𝘀. 𝗔𝗺𝗯𝗮𝘀𝘀𝗮𝗱𝗿𝗲𝘀𝘀 𝗮𝗻𝗱 𝗟𝗮 𝗣𝗮𝗿𝗼𝘇𝗮 𝟮𝟬𝟮𝟰 𝗛𝗶𝗴𝗵𝗹𝗶𝗴𝗵𝘁𝘀</P>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img4.jpg')">
+                <div class="content">
+                    <h2>La Paroza</h2>
+                    <P>The wait is over! La Paroza 2024 is finally here!</P>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img5.jpg')">
+                <div class="content">
+                    <h2>Mr and Ms</h2>
+                    <P>A night of beauty, charisma, talent, and representation! Relive the dominance of UNSTOPPABLE ASIANISTAS across all college departments! </P>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('img6.jpg')">
+                <div class="content">
+                    <h2></h2>
+                    <P></P>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>   
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slider = document.querySelector('.slider');
+
+        next.addEventListener('click',function(){
+            let slides = document.querySelectorAll('.slides');
+            slider.appendChild(slides[0]);
+        })
+        prev.addEventListener('click',function(){
+            let slides = document.querySelectorAll('.slides');
+            slider.prepend(slides[slides.length -1]);
+        })
+    </script>
+</body>
+</html>
